@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="John Doe">
+    
+    
+    
+    
+    
+    
+    <title>小组互评 | Hexo</title>
+    <!-- inject:style -->
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
+    <!-- endinject -->
+    <style>
+        .cube-loading {
+            top: 0;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background: url('/images/lg/loading.gif') no-repeat center center;
+            background-color: rgba(0,0,0,.7);
+        }
+
+        .cube-loading.out {
+            display: none;
+        }
+
+        .cube-loading:before {
+            display: block;
+            content: 'Loading';
+            position: relative;
+            width: 100%;
+            top: 50%;
+            right: -50%;
+            color: #fff;
+        }
+
+        @media(max-width: 768px) {
+            .cube-loading:before {
+                font-size: 1.2em;
+                transform: translate(-24px,20px);
+                -webkit-transform: translate(-24px,20px);
+                -o-transform: translate(-24px,20px);
+                -ms-transform: translate(-24px,20px);
+            }
+        }
+
+        @media(min-width: 768px) {
+            .cube-loading:before {
+
+            }
+        }
+    </style>
+    
+</head>
+<body>
+<div class="cube-body">
+    <nav id="cube-top-memu" class="cube-menu">
+    <ul class="cube-menu-collapse">
+        
+        <li>
+            <i class="cube-icon cube-icon-home" aria-hidden="true"></i>
+            <a href="/">首页</a>
+        </li>
+        
+        <li>
+            <i class="cube-icon cube-icon-archive" aria-hidden="true"></i>
+            <a href="/archives">归档</a>
+        </li>
+        
+        <li>
+            <i class="cube-icon cube-icon-categories" aria-hidden="true"></i>
+            <a href="/categories">分类</a>
+        </li>
+        
+        <li>
+            <i class="cube-icon cube-icon-tags" aria-hidden="true"></i>
+            <a href="/tags">标签</a>
+        </li>
+        
+        <li>
+            <i class="cube-icon cube-icon-about" aria-hidden="true"></i>
+            <a href="/about-me">关于我</a>
+        </li>
+        
+    </ul>
+</nav>
+<nav class="cube-side-menu" id="cube-side-menu">
+    <ul class="cube-menu-list">
+        
+        <li>
+            <a class="lrc-control">Open Lyrics</a>
+        </li>
+        
+        <li>
+            <a class="scroll-to-top">Top</a>
+        </li>
+    </ul>
+</nav>
+    <header class="cube-header" id="cube-header">
+    <img src=" background.jpg " alt="头部背景图片">
+    
+    <div class="cube-type">
+        <span class="cube-typed-title">大组汇报总结</span>
+        <span class="cube-typed-cursor">|</span>
+    </div>
+    
+</header>
+
+    <style>
+        nav.cube-menu:before {
+            content: '';
+            visibility: hidden;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 44px;
+        
+            z-index: -1;
+            background-image: url('/images/background.jpg');
+            background-repeat: no-repeat;
+            background-position: center -356px;
+            background-size: cover;
+            background-color: transparent;
+        }
+
+        header.cube-background.cube-header-background {
+            visibility: hidden;
+            background-image: url('/images/background.jpg');
+            background-position: center -400px;
+        }
+    </style>
+    <header class="cube-background cube-header-background">
+        
+        <div class="cube-type">
+            <span class="cube-typed-title">大组汇报总结</span>
+            <span class="cube-typed-cursor">|</span>
+        </div>
+        
+    </header>
+    <div class="load-header-background"></div>
+    <script>
+        (function (window) {
+
+            window.headerModule = {}
+            window.headerModule.image = {
+                width: '1920',
+                height: '1200'
+            }
+
+        })(window)
+    </script>
+    
+    <div class="cube-content">
+        <div class="cube-left">
+            <div class="cube-article">
+    <h1 class="title">小组互评</h1>
+    
+    <div class="cube-article-header">
+        <div class="cube-article-date">
+            <i class="cube-icon cube-icon-date" aria-hidden="true"></i>
+            <!-- moment.js对象 -->
+            2018-06-13
+        </div>
+        <div class="cube-article-tags">
+    <i class="cube-icon cube-icon-tag" aria-hidden="true"></i>
+    
+</div>
+    </div>
+    
+    <div class="cube-article-content cube-markdown">
+        
+        <h3 id="企业毁灭者"><a href="#企业毁灭者" class="headerlink" title="企业毁灭者"></a>企业毁灭者</h3><table>
+<thead>
+<tr>
+<th>组长/赵永赫</th>
+<th>对组员评价</th>
+<th>对组长评价</th>
+<th>自我总结</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>肖飞</td>
+<td>对待任务十分积极，经常主动发起全组讨论，有一定领导力，但有时比较功利</td>
+<td>赵永赫牛逼</td>
+<td>学会了使用layui以及前后端通信的方法，加深了对django的理解。学到了如何灵活游走在前后端之间不出BUG，以及在一个大团队里分工协作。</td>
+</tr>
+<tr>
+<td>高钰洋</td>
+<td>善于使用新颖的软件工具达成目标，编程能力强，交流能力强，但有时比较毛躁。</td>
+<td>工作很认真负责，进度安排也很合理，可以说是一个非常优秀的小组长了</td>
+<td>这个项目收获很多，当然最重要的是再次遇到了django跨域和cookie问题，这个问题之前在企业实习上困扰了我很久，这次可以说是比较理解了，还有就是学会了更加懂得团队合作懂得统筹安排进度</td>
+</tr>
+<tr>
+<td>章文达</td>
+<td>踏实稳重，思路清晰，学习能力强，有很强的责任感，但有时比较懒散。</td>
+<td>认真负责、可靠，有点工作狂</td>
+<td>充足的沟通才能让一个项目平稳顺利地进行</td>
+</tr>
+</tbody>
+</table>
+<h3 id="吴彦组-孟"><a href="#吴彦组-孟" class="headerlink" title="吴彦组-孟"></a>吴彦组-孟</h3><table>
+<thead>
+<tr>
+<th>组长/孟宇航</th>
+<th>对组员评价</th>
+<th>对组长评价</th>
+<th>自我总结</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>刘利卓</td>
+<td>进行了前后端连接的任务以及后端编写，态度认真诚恳，完成情况很好，能促进队伍进度。</td>
+<td>一直在催进度全程carry非常优秀，前后端链接不厌其烦修改接口，很有耐心。</td>
+<td>在这个作业中，学到了如何合作，如何互帮互助。在组长的领导下有序进行！</td>
+</tr>
+<tr>
+<td>魏辰芸</td>
+<td>在讨论中出谋划策。负责前端，审美水平在线，任务完成及时，能够及时交流。</td>
+<td>组长拥有最多的编程经验，很好地领导我们的工作，组内一直持续温馨的气氛。四人成为了很好的合作伙伴，也更加享受其他互动。最终项目中，组长付出了很多，对我们这些网页新手关怀和体贴。</td>
+<td>在这个项目中，我们深入剖析了系统流程，我知道了用excel也可以做出明晰的界面展示文档，学会了制作用户故事，也更加了解如何合理调整美化UI界面，学会了layUI和Django的使用。这样充满了个性化和独立性的开发经验对我们而言弥足珍贵，也更加深化了我们对完成一个编程项目与小组合作工作的理解。</td>
+</tr>
+<tr>
+<td>李皓</td>
+<td>前端的编写，从后端数据获取数据并渲染页面，工作认真，心态良好。出席情况良好，也很配合组内的工作安排</td>
+<td>工作认真负责，沟通能力强</td>
+<td>还行</td>
+</tr>
+</tbody>
+</table>
+<h3 id="吴彦组-赵"><a href="#吴彦组-赵" class="headerlink" title="吴彦组-赵"></a>吴彦组-赵</h3><table>
+<thead>
+<tr>
+<th>组长/赵欣璇</th>
+<th>对组员评价</th>
+<th>对组长评价</th>
+<th>自我总结</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>陈齐翔</td>
+<td>很有责任心，从小组组队开始就主动承担了很多任务，会自己默默做很多事，而且对一些问题有自己的见解和想法</td>
+<td>工作认真负责，沟通能力强</td>
+<td>我很强</td>
+</tr>
+<tr>
+<td>盛晓颖</td>
+<td>做事很踏实，对于没有接触过的layui等新知识会认真学习如何使用，包括开发后期合并前端代码和风格等工作都做得很有条理。</td>
+<td>工作认真负责，沟通能力强</td>
+<td>我很棒了</td>
+</tr>
+<tr>
+<td>杨豪</td>
+<td>对待问题很认真，会认真思考一个问题的合理性和可行性，以及具体如何实现等</td>
+<td>积极组织开会讨论，愿意思考每个组员提出想法的合理性；积极组织大家一起编程以更好的解决问题，协调前后端统一接口；帮助组员review代码，提出合理的issue推进项目；协助组员解决实际过程中遇到的问题。</td>
+<td>重新巩固了数据库原型图的设计 第一次接触前端开发 对前后端数据接口的设计有了新的认识 看了很多关于消息队列实现的方法 对繁杂系统内部通信有一定的了解</td>
+</tr>
+</tbody>
+</table>
+<h3 id="三人组"><a href="#三人组" class="headerlink" title="三人组"></a>三人组</h3><table>
+<thead>
+<tr>
+<th>组长/杨茗凯</th>
+<th>对组员评价</th>
+<th>对组长评价</th>
+<th>自我总结</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>汪庭盛</td>
+<td>界面前端，有耐心，踏实认真，对于分配的任务能有效完成</td>
+<td>工作认真负责，沟通能力强</td>
+<td>从未感觉如此良好</td>
+</tr>
+<tr>
+<td>詹明鑫</td>
+<td>会议记录，用户故事，认真负责，对于分配的任务能有效完成</td>
+<td>工作认真负责，沟通能力强</td>
+<td>做了一点琐碎而微不足道的工作</td>
+</tr>
+<tr>
+<td>朱龙臻</td>
+<td>后端修改和删除函数实现，认真，对于分配的任务能有效完成</td>
+<td>工作认真负责，沟通能力强</td>
+<td>难受呀</td>
+</tr>
+</tbody>
+</table>
+<h3 id="哈氏控股"><a href="#哈氏控股" class="headerlink" title="哈氏控股"></a>哈氏控股</h3><p>仓库和成本管理</p>
+<table>
+<thead>
+<tr>
+<th>组长/严骅</th>
+<th>对组员评价</th>
+<th>对组长评价</th>
+<th>自我总结</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>唐鹏森</td>
+<td>积极性强，编程能力和处理突发状况的能力强。与组长配合良好，是一个好的合作对象。</td>
+<td>小组长严骅同时还兼任了大组长 平常都是在各个组之间不停协调 很是辛苦 以一己之力草创数据库 可是说是很厉害了 组内也是积极组织会议 推动项目进展 任务分配也很明确</td>
+<td>收获有好有坏 好处在于使用了jQuery 能够理解到不同于MVVM的思想，并且对于html 的操作更加熟悉。坏处在于操作过于繁琐，在MVVM思想下能够解决的问题可能要绕一大圈。 最重要的体会在于，框架真的是一个好东西。后端的Django框架极好地解决了相关的权限问题，前端Layui的不足之处也给我们带来了很大的困扰。</td>
+</tr>
+<tr>
+<td>樊文杰</td>
+<td>是有能力的，但是积极性和参与度不够，同时有点懒惰，这对你以后的工作和寻找合作伙伴会有一定影响。</td>
+<td>组长非常辛苦地协调组内工作 承担了项目的后端搭建 也会很耐心地帮助组员解决编程中碰到的问题 十分辛苦负责</td>
+<td>跟组员的关系更加紧密了 学习到了很多编写web项目的实用技巧</td>
+</tr>
+<tr>
+<td>刘艺玲</td>
+<td>作为女生，或许志不在此，但是态度也是很重要的。前期的工作做得不错，但是后期的参与度不够，积极性也有待提升。希望能够更好！</td>
+<td>工作认真负责，沟通能力强</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+</div>
+
+<div class="cube-article-nav">
+    <ul>
+        
+        <li class="prev">
+            <a href="/2018/06/13/tuanjian/">
+                <i class="cube-icon cube-prev" aria-hidden="true"></i>
+                团队风采
+            </a>
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+<!-- TODO 根据theme.comment的内容进行入口选择 -->
+
+
+
+        </div>
+        <div class="cube-right">
+            
+
+<div class="cube-music cube-sidebar" id="cube-music">
+    <div class="cube-player aplayer" id="cube-player"></div>
+</div>
+<script>
+    (function (window) {
+        window.musicModule = {}
+        window.musicModule.musicConfig = '{"narrow":false,"autoplay":false,"showlrc":3,"theme":"#b7daff","mutex":true,"mode":"circulation","preload":"auto","listmaxheight":"513px","music":[{"title":"Dear friends","author":"TRIPLANE","url":"http://cube-1252774894.cosgz.myqcloud.com/music/source/TRIPLANE - Dear friends.mp3","lrc":"http://cube-1252774894.cosgz.myqcloud.com/music/lrc/Dear friends - TRIPLANE.lrc","pic":"http://cube-1252774894.cosgz.myqcloud.com/music/image/TRIPLANE - Dear friends.jpg"},{"title":"Butter-Fly","author":"和田光司","url":"http://cube-1252774894.cosgz.myqcloud.com/music/source/和田光司 - Butter-Fly (ピアノヴァージョン).mp3","lrc":"http://cube-1252774894.cosgz.myqcloud.com/music/lrc/Butter-Fly (ピアノヴァージョン) - 和田光司.lrc","pic":"http://cube-1252774894.cosgz.myqcloud.com/music/image/和田光司 - Butter-Fly (ピアノヴァージョン).jpg"},{"title":"宵闇花火","author":"葉月ゆら","url":"http://cube-1252774894.cosgz.myqcloud.com/music/source/葉月ゆら - 宵闇花火.mp3","lrc":"http://cube-1252774894.cosgz.myqcloud.com/music/lrc/宵闇花火 - 葉月ゆら.lrc","pic":"http://cube-1252774894.cosgz.myqcloud.com/music/image/葉月ゆら - 宵闇花火.jpg"}]}'
+        window.musicModule.lrcConfig = {
+            open: 'Open Lyrics',
+            close: 'Close Lyrics'
+        }
+    })(window)
+</script>
+
+
+
+<div class="cube-recent-posts cube-sidebar" id="cube-recent-posts">
+    <div class="title">
+        <a>Recent Posts</a>
+    </div>
+    <ul class="list">
+        
+        
+        <li>
+            <!-- TODO 如果文章要显示图片，那么在front-matter上添加preview属性(url or path) -->
+            
+            <div class="normal">
+                <p class="index first">
+                    <span>1</span>
+                </p>
+                <p class="title">
+                    <a href="/2018/06/13/jiagou/" title="系统架构">系统架构</a>
+                </p>
+            </div>
+            
+        </li>
+        
+        
+        
+        <li>
+            <div class="normal">
+                <p class="index">
+                    <span>2</span>
+                </p>
+                <p class="title">
+                    <a href="/2018/06/13/xuqiu/" title="需求">需求</a>
+                </p>
+            </div>
+        </li>
+        
+        
+        
+        <li>
+            <div class="normal">
+                <p class="index">
+                    <span>3</span>
+                </p>
+                <p class="title">
+                    <a href="/2018/06/13/yuanxing/" title="原型图">原型图</a>
+                </p>
+            </div>
+        </li>
+        
+        
+        
+        <li>
+            <div class="normal">
+                <p class="index">
+                    <span>4</span>
+                </p>
+                <p class="title">
+                    <a href="/2018/06/13/er/" title="数据库设计">数据库设计</a>
+                </p>
+            </div>
+        </li>
+        
+        
+        
+        <li>
+            <div class="normal">
+                <p class="index">
+                    <span>5</span>
+                </p>
+                <p class="title">
+                    <a href="/2018/06/13/yhgs/" title="用户故事">用户故事</a>
+                </p>
+            </div>
+        </li>
+        
+        
+        
+        <li>
+            <div class="normal">
+                <p class="index">
+                    <span>6</span>
+                </p>
+                <p class="title">
+                    <a href="/2018/06/13/fengong/" title="分工">分工</a>
+                </p>
+            </div>
+        </li>
+        
+        
+        
+        <li>
+            <div class="normal">
+                <p class="index">
+                    <span>7</span>
+                </p>
+                <p class="title">
+                    <a href="/2018/06/13/tuanjian/" title="团队风采">团队风采</a>
+                </p>
+            </div>
+        </li>
+        
+        
+        
+        <li>
+            <div class="normal">
+                <p class="index">
+                    <span>8</span>
+                </p>
+                <p class="title">
+                    <a href="/2018/06/13/huping/" title="小组互评">小组互评</a>
+                </p>
+            </div>
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+
+
+
+
+
+<div class="cube-links cube-sidebar" id="cube-links">
+    <div class="title">
+        <a>Links</a>
+    </div>
+    <ul class="list">
+        
+        <li>
+            
+            
+            <img src="http://cube-1252774894.cosgz.myqcloud.com/links/GitHub.png">
+            
+            <a href="https://github.com/laysming" target="_blank">GitHub</a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+    </div>
+</div>
+<footer class="cube-footer">
+    
+© 2017 John Doe
+
+<br>
+Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>.&nbsp;Theme by <a href="https://github.com/ZEROKISEKI" target="_blank">AONOSORA</a>
+</footer>
+<!-- inject:script -->
+<script src="/js/script.js"></script>
+<!-- endinject -->
+<div class="cube-loading out"></div>
+</body>
+</html>
